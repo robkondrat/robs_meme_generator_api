@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     patch '/users/:id' => 'users#update'
     delete '/users/:id' => 'users#destroy'
 
+    post '/sessions' => 'sessions#create'
+
     get "/memes" => 'memes#index'
     post '/memes' => 'memes#create'
     get '/memes/:id' => 'memes#show'
